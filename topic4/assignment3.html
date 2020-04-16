@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the timedifference between UTC and local time.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getTimezoneOffset();
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>

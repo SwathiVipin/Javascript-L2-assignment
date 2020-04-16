@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <input type="number" id="val1" name="enter first number"><br><br>
+        <button type="button" onclick="decimalValue();">Get Value</button>
+<script>
+function  decimalValue(){
+    var num1=Number(document.getElementById("val1").value);
+    console.log("----",typeof num1,num1)
+    document.write("num1.toFixed() is : " + num1.toFixed(7));
+         document.write("<br />");
+
+
+}
+</script>
+        
+</body>
+</html>

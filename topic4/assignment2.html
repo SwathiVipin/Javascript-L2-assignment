@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<h2>JavaScript getDay()</h2>
+
+<p>The getDay() method returns the weekday as a number:</p>
+
+<p id="demo"></p>
+
+<script>
+Date.shortDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+function short_Days(dt)
+{ console.log(dt.getDay(),"----",Date.shortDays,"--......",dt)
+   return Date.shortDays[dt.getDay()];
+   document.write(Date.shortDays[dt.getDay()]);
+}
+
+dt = new Date();
+console.log(short_Days(dt));
+document.write(short_Days(dt));
+
+
+dt = new Date(2020, 03, 13);
+console.log(short_Days(dt));
+document.write(short_Days(dt))
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="val1" name="enter  number">enter  number<br><br>
+        <input type="number" id="val2" name="enter percentage">enter percentage<br><br>
+        <button type="button" onclick="getAddedValue();">Get Value</button>
+
+        <script>
+          function getAddedValue(){
+              var num1=Number(document.getElementById("val1").value);
+              var num2=Number(document.getElementById("val2").value);
+              var val=num1/100 * num2;
+              alert(val);}
+
+</script>
+
+</body>
+</html>

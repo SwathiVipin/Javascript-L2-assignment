@@ -1,0 +1,52 @@
+!-- specified number of strings
+<html>
+    <body>
+        <button onClick="extractStringFunction()">Click here to exyract number</button>
+<p id="demo"></p>
+
+<script>
+
+    function extractStringFunction(){
+        var str=" Swathi 4th 001 Ananda Nilayam 4th cross 560036";
+        var number=str.match(/\d+/g);
+        
+         //var number2=document.getElementById("demo").innerHTML.match(/\d+/g); ;
+           // console.log(number);
+
+             alert(number);
+            }
+        
+
+</script>
+    </body>
+</html>
+
+
+
+<!-- 
+<html>
+<head>
+    <title>Extract Numbers from String using JavaScript</title>
+</head>
+<body>
+    <p id='prod21'>
+    	Swathi 4th 001 Ananda Nilayam 4th cross 560036
+    </p>
+
+    <input type="button" id="bt1" value="Click it" onclick="getNumberOnly()" />
+</body>
+<script>
+    function getNumberOnly() {
+        var p = document.getElementById('prod21');
+        
+//         get the number from the <p> element's id.
+        // var n1 = p.id.match(/\d+/);
+        
+//         get numbers from element's content.
+        var n2 = p.innerHTML.match(/\d+/g); 
+        
+        alert(' and ' + n2);
+    }
+    
+</script>
+</html> -->
